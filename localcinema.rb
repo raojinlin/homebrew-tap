@@ -5,21 +5,21 @@
 class Localcinema < Formula
   desc "Lightweight LAN video streaming server"
   homepage "https://github.com/raojinlin/localcinema"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.2/localcinema_0.0.2_darwin_amd64.zip"
-      sha256 "f1086a33b836e397b321129b3df6a937ea2e3a9f58bf07dbc4314feb6b8435be"
+      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.3/localcinema_0.0.3_darwin_amd64.zip"
+      sha256 "ecd00d3533eea54b237dc1ce66704ac41691cf9b2d9500c25f3f289c905a5c9f"
 
       def install
         bin.install "localcinema"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.2/localcinema_0.0.2_darwin_arm64.zip"
-      sha256 "b6a1595a6ab0f91cc75f5661b7ac9004312434076ab24b5b625777b3bf2cb4df"
+      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.3/localcinema_0.0.3_darwin_arm64.zip"
+      sha256 "551f9a28d8c246db2caf7db9635751b529f438a4466dead084a1141165fb873d"
 
       def install
         bin.install "localcinema"
@@ -29,15 +29,15 @@ class Localcinema < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.2/localcinema_0.0.2_linux_amd64.tar.gz"
-      sha256 "033e3c045741d34ee090608ae492acb3d253a6d025ed88d1ca13d95efd2316ac"
+      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.3/localcinema_0.0.3_linux_amd64.tar.gz"
+      sha256 "5b46e55c1c56b0d6ace3a27554064ed1877441f56039156c08073db4f02c602a"
       def install
         bin.install "localcinema"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.2/localcinema_0.0.2_linux_arm64.tar.gz"
-      sha256 "1682a120df195a497a7ab7532fa01cc86d5f21cae56467595e3aefebbd6b86f8"
+      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.3/localcinema_0.0.3_linux_arm64.tar.gz"
+      sha256 "cac429e3c44d8b13f4ee318e7058c21d825b2e07d4e877ff6266e74643c9a60b"
       def install
         bin.install "localcinema"
       end
