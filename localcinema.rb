@@ -11,7 +11,7 @@ class Localcinema < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/raojinlin/localcinema/releases/download/v0.0.4/localcinema_0.0.4_darwin_amd64.zip"
-      sha256 "7a7e4a5341f94356962bd9e1a00e12cc79fdd736bfc5842fc330ae7a44813672"
+      sha256 "b8d2b05c3423037f78539133c6b5b42e434e6f94341f624f3f9c519da6359567"
 
       define_method(:install) do
         bin.install "localcinema"
@@ -19,7 +19,7 @@ class Localcinema < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/raojinlin/localcinema/releases/download/v0.0.4/localcinema_0.0.4_darwin_arm64.zip"
-      sha256 "8bb537abece30eea572ad18ac002617c7860f505db1e1196f127d2e21e36aff1"
+      sha256 "177b0e2db48f2a00bba9846328959f58abb6526611c980cdfd8e8b43f723e696"
 
       define_method(:install) do
         bin.install "localcinema"
@@ -30,14 +30,14 @@ class Localcinema < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/raojinlin/localcinema/releases/download/v0.0.4/localcinema_0.0.4_linux_amd64.tar.gz"
-      sha256 "325e6e7c227a87eee27a0baa20cff56f3ef5e47cdda534649662df4b807f2f54"
+      sha256 "fb7b11f920c903a73ef72d76dfca1a30c27b245e167c281fa7783002c9bc6ebc"
       define_method(:install) do
         bin.install "localcinema"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/raojinlin/localcinema/releases/download/v0.0.4/localcinema_0.0.4_linux_arm64.tar.gz"
-      sha256 "f9b6dbd0cfd9fc6fed423a1fb9fc71934b6927742ee6e603bf243d99ae1f7c4d"
+      sha256 "b94a93fe832ff7cb025818f0d439625638786fe7ec5c2077202baf2f1ea3569a"
       define_method(:install) do
         bin.install "localcinema"
       end
