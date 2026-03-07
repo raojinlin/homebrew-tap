@@ -5,21 +5,21 @@
 class Localcinema < Formula
   desc "Lightweight LAN video streaming server"
   homepage "https://github.com/raojinlin/localcinema"
-  version "0.0.6"
+  version "0.0.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.6/localcinema_0.0.6_darwin_amd64.zip"
-      sha256 "b21141d81dd2b19a751a6c3ff3f0f1eafd646d19a2a8fc2d973b5f309c2781b6"
+      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.7/localcinema_0.0.7_darwin_amd64.zip"
+      sha256 "572fa180bb421cacbc50043732645f2637969a542e1b33120fe2c6a02d11a6fb"
 
       define_method(:install) do
         bin.install "localcinema"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.6/localcinema_0.0.6_darwin_arm64.zip"
-      sha256 "afc60f72704158908a965da49d267d85ca0bc7441e4bc0e90c61b4e537c547bf"
+      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.7/localcinema_0.0.7_darwin_arm64.zip"
+      sha256 "02290160b766360e5c2daed1fe92fb6f6ad5571fa1b9a7334e97f91f7136e72a"
 
       define_method(:install) do
         bin.install "localcinema"
@@ -29,15 +29,15 @@ class Localcinema < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.6/localcinema_0.0.6_linux_amd64.tar.gz"
-      sha256 "53a3702c2663d551b3ab300bdb31c9a9c9c239f379da7292392fb3888a6e5bde"
+      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.7/localcinema_0.0.7_linux_amd64.tar.gz"
+      sha256 "6053039f526596524849c02e5a936b03851ace0c8bc5032a6f8198cd30a1b664"
       define_method(:install) do
         bin.install "localcinema"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.6/localcinema_0.0.6_linux_arm64.tar.gz"
-      sha256 "600fa5859aa85f9a2d1273a0e7a9ee5b6d0942ae53e6154b3dfde5d47fa42c9b"
+      url "https://github.com/raojinlin/localcinema/releases/download/v0.0.7/localcinema_0.0.7_linux_arm64.tar.gz"
+      sha256 "d136d626c8f5b8adc9dc43b4fd3e38be07ce341b862de80cb8c51400de2f3e16"
       define_method(:install) do
         bin.install "localcinema"
       end
